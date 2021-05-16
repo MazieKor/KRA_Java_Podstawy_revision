@@ -17,6 +17,7 @@ public class Main10 {
             System.out.println("Padł remis");
         } else
             System.out.println("Błąd");
+
     }
 
     public static String footballWin(int goalsATeamHome, int goalsATeamVisit, int goalsBTeamHome, int goalsBTeamVisit) {
