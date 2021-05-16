@@ -7,7 +7,6 @@ public class Main10 {
         int goalsATeamVisit = 5;
         int goalsBTeamHome = 0;
         int goalsBTeamVisit = 6;
-
         String winner = footballWin(goalsATeamHome, goalsATeamVisit, goalsBTeamHome, goalsBTeamVisit);
         if (winner == "1") {
             System.out.println("Zwycięzcą jest zespół A");
