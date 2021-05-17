@@ -7,12 +7,8 @@ public class Main02 {
 
     public static void main(String[] args) {
         int[] randArray = new int[20];
+        randomGenerator(randArray);
 
-        for (int i = 0; i < randArray.length; i++) {
-            Random r = new Random();
-            int randomNumber = r.nextInt(101);
-            randArray[i] = randomNumber;
-        }
         System.out.println("Tablica: " + Arrays.toString(randArray));
 
         int min = randArray[0];
@@ -22,5 +18,14 @@ public class Main02 {
             }
         }
         System.out.print("Najmniejsza liczba: " + min);
+    }
+
+    public static void randomGenerator(int[] randArray) {
+        for (int i = 0; i < randArray.length; i++) {
+            Random r = new Random();
+            int randomNumber = r.nextInt(101);
+            randArray[i] = randomNumber;
+        }
+
     }
 }
