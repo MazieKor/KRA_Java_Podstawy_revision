@@ -22,7 +22,5 @@ public class Main04 {
         }
         System.out.println("Numbers: " + Arrays.toString(numbers));
         System.out.print("Reverse: " + Arrays.toString(reverse));
-
-
     }
 }

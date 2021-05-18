@@ -11,6 +11,7 @@ public class Main02 {
 
         System.out.println("Tablica: " + Arrays.toString(randArray));
 
+//solution without Arrays.sort
         int min = randArray[0];
         for (int i = 1; i < randArray.length; i++) {
             if (randArray[i] < min) {
