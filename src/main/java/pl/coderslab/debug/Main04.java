@@ -10,8 +10,8 @@ public class Main04 {
 
     private static double calculateSum(String[] input) {
         double result = 0;
-        for (int i = 1; i < input.length; i++) {
-            result = Integer.parseInt(input[i]);
+        for (int i = 0; i < input.length; i++) {
+            result += Integer.parseInt(input[i]);
         }
         return result;
     }

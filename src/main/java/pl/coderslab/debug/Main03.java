@@ -6,7 +6,7 @@ public class Main03 {
         int a = 10;
         int b = 0;
         for (int i = 1000; i >= 0; i--) {
-            b = i < 9995 ? a / i : a * i;
+            b = i < 9995 ? a / i : a * i;   //error should stay in this method
         }
         System.out.println(b);
 
