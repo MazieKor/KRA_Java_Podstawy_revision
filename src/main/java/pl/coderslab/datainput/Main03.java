@@ -6,7 +6,7 @@ public class Main03 {
 //2 solutions
 
     public static void main(String[] args) {
-        getData();
+        getData2();
 
     }
 
@@ -36,8 +36,7 @@ public class Main03 {
         Scanner scan = new Scanner(System.in);
         for (; ; ) {
             System.out.println("Wprowadź liczbę (aby wyjść z funkcji wprowadź 0)");
-            String scanLine = scan.nextLine();
-            scanLine = scanLine.trim();
+            String scanLine = scan.nextLine().trim();
             String[] scanLineArray = scanLine.split(" ");
             if (scanLineArray.length != 1) {
                 System.out.println("długość napisu: " + scanLineArray.length + ". wprowadź dokładnie jedną liczbę");
