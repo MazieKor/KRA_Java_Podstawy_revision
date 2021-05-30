@@ -54,7 +54,7 @@ public class Main03 {
             counter++;
             sum += scanInt;
         }
-        System.out.println("suma podanych liczb to: " + sum + " ilość podanych liczb to: " + counter);
+        System.out.println("Wynik: suma podanych liczb to: " + sum + " ilość podanych liczb to: " + counter);
     }
 
 }
