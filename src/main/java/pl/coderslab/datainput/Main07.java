@@ -13,7 +13,7 @@ public class Main07 {
         System.out.println("Wpisz rodzaj zamiany: \"nb\" lub \"bn\"");
         Scanner scan = new Scanner(System.in);
         String switchType = "";
-        for (; ; ) {
+        while (true) {
             switchType = scan.nextLine();
             if (switchType.equals("nb") || switchType.equals("bn")) {
                 break;

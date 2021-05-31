@@ -45,7 +45,7 @@ public class Main05 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Wprowadź tekst");
         quitCheck:
-        for (; ; ) {
+        while (true) {
             String textLine = scan.nextLine();
             String[] textLineArray = textLine.split(" ");
             for (int i = 0; i < textLineArray.length; i++) {
