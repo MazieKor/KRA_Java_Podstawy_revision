@@ -1,0 +1,5 @@
+czwart
+nowy test
+kolejne linie
+powinny sie dodawać
+nie nadpisywać
