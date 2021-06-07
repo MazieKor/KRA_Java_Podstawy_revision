@@ -52,7 +52,7 @@ public class Main01 {
                     if (directory.equalsIgnoreCase("quit")) {
                         continue method;
                     }
-                    File file = new File(directory);    // NEW -jak już podam directory chyba nie moge zmienić w pliku file
+                    File file = new File(directory);
                     if (!file.isFile()) {
                         System.out.print("Podany plik nie istnieje. ");
                         continue;

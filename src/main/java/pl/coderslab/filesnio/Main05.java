@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Main05 {
 
     public static void main(String[] args) {
-        String fileName = "src/main/java/pl/coderslab/filesnio/Task5/test.txt";
+        String fileName = "src/main/java/pl/coderslab/filesnio/Task5/test.Nowy.txt";
         readFromFile(fileName);
     }
 
@@ -23,7 +23,7 @@ public class Main05 {
         } else {
             StringBuilder contentOfFile = new StringBuilder();
             try {
-                contentOfFile.append(Files.readAllLines(path));
+                contentOfFile.append(Files.readAllLines(path));   // we don't want directly from readAllLines to a list (too easy ;) )
             } catch (IOException e) {
                 System.out.println("Błąd w czytaniu pliku");
             }
@@ -91,7 +91,7 @@ public class Main05 {
         String htmlFileName = lastFileName + ".html";
         String copiedDirectoryName = "";
         for (int i = 0; i < elementsInPath - 1; i++) {
-            copiedDirectoryName = copiedDirectoryName + String.valueOf(path.getName(i)) + "/";
+            copiedDirectoryName = copiedDirectoryName + String.valueOf(path.getName(i)) + "/";   //could also firstly split directory (eg by \\.), and then String.join
         }
         copiedDirectoryName = copiedDirectoryName + htmlFileName;
         return copiedDirectoryName;

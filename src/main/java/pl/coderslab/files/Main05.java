@@ -9,7 +9,7 @@ public class Main05 {
 
     public static void main(String[] args) {
 
-        try {                                     //NEW try with resources nie zadziałało, może przez throws
+        try {
             String[] sortedFile = sortFile();
             System.out.println("Tablica po sortowaniu: " + Arrays.toString(sortedFile));
         } catch(FileNotFoundException e) {
@@ -21,7 +21,7 @@ public class Main05 {
     public static String[] sortFile() throws FileNotFoundException {
         File file = new File("text5.txt");
         Scanner scan = new Scanner(file);
-        String[] languages = new String[0];   //NEW sposób na inicjalizację
+        String[] languages = new String[0];
         while (scan.hasNextLine()){
             String row = scan.nextLine().trim();
             languages = Arrays.copyOf(languages, languages.length +1);

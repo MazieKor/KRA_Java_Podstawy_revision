@@ -21,7 +21,7 @@ public class Main03 {
         if (!Files.exists(path)) {
             fileNotExist(path, scan);    //in this task program checks only existence of file, not a whole directory
         }
-        if (Files.exists(path)){
+        if (Files.exists(path)){         //2nd check of file existence because method "fileNotExist" enable us to create a file
             if(!Files.exists(path2)) {
                 try {
                     Files.copy(path, path2);
@@ -30,7 +30,7 @@ public class Main03 {
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
-                    System.out.println("problem z kopiowaiem pliku. Plik nie został skopiowany");
+                    System.out.println("problem z kopiowaiem pliku");
                 }
             } else {
                 System.out.println("plik, który ma być kopią oryginalnego pliku czyli " + secondFileName + " już istnieje. Czy chcesz żeby został zastąpiony? (Y/N)");
@@ -46,7 +46,7 @@ public class Main03 {
                             System.out.println("Skopiowano plik");
                         } catch (IOException e) {
                             e.printStackTrace();
-                            System.out.println("problem z kopiowaiem pliku. Plik nie został skopiowany");
+                            System.out.println("problem z kopiowaiem pliku.");
                         }
                     }
                     break;
@@ -56,7 +56,7 @@ public class Main03 {
             System.out.println("Podany plik do skopiowania nie istnieje");
     }
 
-    private static void fileNotExist(Path path, Scanner scan) {    //NEW: w void plik jest tworzony
+    private static void fileNotExist(Path path, Scanner scan) {
         System.out.println("podany do skopiowania plik nie istnieje. Czy stworzyć pusty plik o podanej nazwie? (Y/N)");
         while (true) {
             String createNewFileMessage = scan.nextLine().trim();

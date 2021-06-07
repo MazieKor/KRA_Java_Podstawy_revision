@@ -5,7 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 public class Main04 {
     public static void main(String[] args) {
         String str = "sprawdzanie palindromu";
-        String str2 = "kajak";
+        String str2 = "kajak kajak";
         System.out.println("czy podany wyraz jest palindromem: " + checkPalindrome(str2));
     }
 
