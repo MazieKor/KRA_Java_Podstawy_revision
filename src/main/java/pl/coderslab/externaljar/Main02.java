@@ -8,6 +8,11 @@ public class Main02 {
         String str = "Testowanie Nowego pakietu COMMON-LANG, 3";
         System.out.println(toggleChar(str));
         System.out.println("test oryginalnego napisu: " + str);
+
+        String test2 = "2.test StringUtils";
+        String swapTest2 = StringUtils.swapCase(test2);
+        System.out.println("Test oryginalnego napisu: " + test2);
+        System.out.println("Test napisu StringUtils: " + swapTest2);
     }
 
     public static String toggleChar(String str){
