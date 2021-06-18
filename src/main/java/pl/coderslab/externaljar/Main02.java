@@ -11,6 +11,8 @@ public class Main02 {
 
         String test2 = "2.test StringUtils";
         String swapTest2 = StringUtils.swapCase(test2);
+        System.out.println("check: " + StringUtils.equals("adam", " adam"));
+        System.out.println("check: " + StringUtils.containsOnly("048 ", "08e4"));
         System.out.println("Test oryginalnego napisu: " + test2);
         System.out.println("Test napisu StringUtils: " + swapTest2);
     }
