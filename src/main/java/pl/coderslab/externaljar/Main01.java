@@ -6,7 +6,7 @@ public class Main01 {
 
     public static void main(String[] args) {
         String str = "testStringUtils";
-        System.out.println("Odwrócony napis: " + reverseString(str));
+        System.out.println("Odwrócony napis w StringUtils: " + reverseString(str));
     }
 
     public static String reverseString(String str){
