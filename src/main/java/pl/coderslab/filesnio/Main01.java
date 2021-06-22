@@ -21,7 +21,7 @@ public class Main01 {
         } else {
             try {
                 String pathNewDirectory = String.valueOf(Files.createDirectory(path));
-                System.out.println("stworzono ścieżkę: " + pathNewDirectory);
+                System.out.println("stworzono nową ścieżkę: " + pathNewDirectory);
             } catch (IOException e) {
                 System.out.println("Nie udało się stworzyć katalogu");
                 e.printStackTrace();
