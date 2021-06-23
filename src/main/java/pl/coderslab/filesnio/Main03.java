@@ -57,7 +57,7 @@ public class Main03 {
     }
 
     private static void fileNotExist(Path path, Scanner scan) {
-        System.out.println("podany do skopiowania plik nie istnieje. Czy stworzyć pusty plik o podanej nazwie? (Y/N)");
+        System.out.println("podany do skopiowania plik nie istnieje. Czy stworzyć pusty plik o podanej nazwie? Wpisz Y lub N)");
         while (true) {
             String createNewFileMessage = scan.nextLine().trim();
             if (!createNewFileMessage.equalsIgnoreCase("y") &&
