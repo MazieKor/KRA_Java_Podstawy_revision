@@ -62,7 +62,7 @@ public class Main03 {
             String createNewFileMessage = scan.nextLine().trim();
             if (!createNewFileMessage.equalsIgnoreCase("y") &&
                     !createNewFileMessage.equalsIgnoreCase("n")) {
-                System.out.println("Podano złą wartość. Podaj Y lub N");
+                System.out.println("Podano złą wartość. Wpisz Y lub N");
             } else if (createNewFileMessage.equalsIgnoreCase("n")) {
                 System.out.println("Program zakończono. Możesz włączyć program i podać inny plik");
                 break;
