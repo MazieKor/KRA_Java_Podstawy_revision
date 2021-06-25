@@ -72,7 +72,7 @@ public class Main03 {
                     break;
                 } catch (IOException e) {
                     e.printStackTrace();
-                    System.out.println("plik nie został utworzony");
+                    System.out.println("Plik nie został utworzony");
                     break;
                 }
             }
