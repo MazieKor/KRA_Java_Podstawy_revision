@@ -63,7 +63,7 @@ public class Main03 {
             if (!createNewFileMessage.equalsIgnoreCase("y") &&
                     !createNewFileMessage.equalsIgnoreCase("n")) {
                 System.out.println("Podano złą wartość. Wpisz Y lub N");
-            } else if (createNewFileMessage.equalsIgnoreCase("n")) {
+            } else if (createNewFileMessage.equalsIgnoreCase("N")) {
                 System.out.println("Program zakończono. Możesz włączyć program i podać inny plik");
                 break;
             } else {
