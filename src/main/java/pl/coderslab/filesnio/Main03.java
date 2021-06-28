@@ -60,8 +60,8 @@ public class Main03 {
         System.out.println("podany do skopiowania plik nie istnieje. Czy stworzyć pusty plik o podanej nazwie? Wpisz Y lub N)");
         while (true) {
             String createNewFileMessage = scan.nextLine().trim();
-            if (!createNewFileMessage.equalsIgnoreCase("y") &&
-                    !createNewFileMessage.equalsIgnoreCase("n")) {
+            if (!createNewFileMessage.equalsIgnoreCase("Y") &&
+                    !createNewFileMessage.equalsIgnoreCase("N")) {
                 System.out.println("Podano złą wartość. Wpisz Y lub N");
             } else if (createNewFileMessage.equalsIgnoreCase("N")) {
                 System.out.println("Program zakończono. Możesz włączyć program i podać inny plik");
