@@ -21,7 +21,7 @@ public class Main01 {
             int wiek = scan.nextInt();
             System.out.print(name + " ma " + wiek + " lat.");
         } catch (InputMismatchException e) {
-            System.out.println("został podany błędny wiek. uruchom program jeszcze raz");
+            System.out.println("Został podany błędny wiek. uruchom program jeszcze raz");
         }
 
     }
