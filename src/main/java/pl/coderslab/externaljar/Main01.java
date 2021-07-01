@@ -5,7 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 public class Main01 {
 
     public static void main(String[] args) {
-        String str = "testStringUtils";
+        String str = " testStringUtils z    dodatkowymi   spacjami   i       tabulatorami - test  ";
         System.out.println("Odwrócony napis w StringUtils: " + reverseString(str));
     }
 
