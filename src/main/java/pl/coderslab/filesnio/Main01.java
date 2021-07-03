@@ -34,7 +34,7 @@ public class Main01 {
         if(file.mkdir()){
             System.out.println("scieżka została stworzona");
         } else
-            System.out.println("ścieżka nie została stworzona");
+            System.out.println("Ścieżka nie została stworzona");
     }
 
 }
