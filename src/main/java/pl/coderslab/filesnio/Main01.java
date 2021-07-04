@@ -32,7 +32,7 @@ public class Main01 {
     public static void createDirectiory2 (String directoryName) {
         File file = new File(directoryName);
         if(file.mkdir()){
-            System.out.println("scieżka została stworzona");
+            System.out.println("Ścieżka została stworzona");
         } else
             System.out.println("Ścieżka nie została stworzona");
     }
